@@ -16,7 +16,7 @@ class _04_NullPointExceptionCatchTest {
     @Throws(InterruptedException::class)
     fun test() {
         val temp: String? = null
-        val size: Int
+        var size: Int //val로 할 경우 버전이 달라서 컴파일 에러남
         try {
             size = temp!!.length
         } catch (e: Exception) {

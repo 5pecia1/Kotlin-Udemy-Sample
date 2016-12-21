@@ -38,7 +38,12 @@ class _02_NullSafetyTest {
     @Throws(InterruptedException::class)
     fun testNullCheck2() {
         val name: String? = null
-        println(getLength2(name))
+        val length = getLength2(name)
+        when(length) {
+            is Int -> println("Int type")
+            null -> println("is null")
+            else -> println(length)
+        }
     }
 
     private fun getLength2(name: String?): Int? {

@@ -13,6 +13,7 @@ class _05_NullSafetyCastTest {
         val a: String? = "ABC"
 
         // String을 강제로 형 변환 할 경우에는 CastException이 발생하여 이 경우 null이 저장
+//        val aInt: Int? = a as? Int //Int? 타입을 Int로 변환환되지 않는다
         val aInt: Int? = a as? Int?
         println(aInt)
 

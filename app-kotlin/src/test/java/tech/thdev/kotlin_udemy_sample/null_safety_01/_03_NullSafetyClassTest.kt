@@ -26,7 +26,7 @@ class _03_NullSafetyClassTest {
     @Throws(InterruptedException::class)
     fun test() {
         val c: C? = C()
-        val b: B? = null
+        val b: B? = B(c)
         val a: A? = A(b)
 
         print(a?.b?.c?.name)
