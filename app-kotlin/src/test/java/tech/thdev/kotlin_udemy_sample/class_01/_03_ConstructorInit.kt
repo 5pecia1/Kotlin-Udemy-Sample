@@ -26,4 +26,9 @@ class _03_ConstructorInit {
     class ConstructorInit(val name: String) {
         // ...
     }
+
+    //private class
+    class PrivitClass private constructor() {
+
+    }
 }

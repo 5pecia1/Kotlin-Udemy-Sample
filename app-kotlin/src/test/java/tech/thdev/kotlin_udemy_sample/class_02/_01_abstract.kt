@@ -9,7 +9,7 @@ abstract class _01_Abstract {
     abstract var attributeA: String
 
     // 상속 후 재 정의를 하지 못함
-    val attributeB: String = "AttributeB"
+    /*open*/val attributeB: String = "AttributeB"
 
     abstract fun methodA()
 
